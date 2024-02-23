@@ -26,6 +26,7 @@ Implement soft deletion for products, where "deleted" products are marked as ina
 Admins have the exclusive ability to restore products marked as inactive.
 Include features for product search, sorting (e.g., by name, price), and pagination.
 Technical Specifications
+
 Backend (Node.js & Express.js):
 
 Design RESTful APIs to handle all server-side logic.
