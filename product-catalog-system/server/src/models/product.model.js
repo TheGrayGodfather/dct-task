@@ -8,9 +8,12 @@ const productSchema = new mongoose.Model(
     image: String,
     isAdminApproved: Boolean,
     isDeleted: Boolean,
-    cataloguerId: mongoose.Schema.Types.ObjectId,
+    cataloguerId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User"
+    },
   },
-  { new: true }
+  { timestamps: true }
 );
 
 const Product = mongoose.model("Product", productSchema);

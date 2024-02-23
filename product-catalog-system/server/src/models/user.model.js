@@ -9,8 +9,12 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "customer",
     },
+    isDeleted: {
+      type: Boolean,
+      default: false
+    },
   },
-  { new: true }
+  { timestamps: true }
 );
 
 const User = mongoose.model("User", userSchema);
